@@ -10,7 +10,7 @@ const (
 	host     = "localhost"
 	port     = 5432
 	user     = "urlpro"
-	password = "<Password>"
+	password = "<PASSWORD>"
 	dbname   = "urlpro"
 )
 
