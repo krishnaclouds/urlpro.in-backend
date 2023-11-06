@@ -1,4 +1,4 @@
-package controller
+package url
 
 import (
 	"crypto/sha256"
@@ -17,7 +17,6 @@ type URLData struct {
 
 // GenerateShortURL generates a short URL for the given OriginalURL.
 // It uses SHA-256 hash to create a unique short URL.
-// TODO: Handle BaseURL and Expiry Scenarios
 func GenerateShortURL(c *gin.Context) {
 	fmt.Println("In Short URL Generator")
 
