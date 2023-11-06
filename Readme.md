@@ -24,8 +24,8 @@ URLPro.in is an opensource URL short-ner application written in Golang and vue.j
 | Status  | Milestone                             |     ETA     |
 |:-------:|:--------------------------------------|:-----------:|
 |    ✔    | Implement basic Backend and Dockerize | Nov 06 2023 |
-|✔ | Connect to Postgres                   | Nov 10 2023 |
-|    👩🏻‍💻   | Store Short URLs in DB                | Nov 07 2023 |
+|✔ | Connect to Postgres                   | Nov 07 2023 |
+|    👩🏻‍💻   | Store Short URLs in DB                | Nov 10 2023 |
 |   🎯    | Implement Redirect API                | Nov 15 2023 |
 |   🎯    | Deploy on AWS                         | Nov 20 2023 |
 |   🎯    | Design Basic Frontend                 | Nov 30 2023 |
