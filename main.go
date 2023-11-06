@@ -2,17 +2,29 @@ package main
 
 import (
 	"fmt"
+	"github.com/spf13/viper"
+
 	d "urlpro/initializers/database"
 	r "urlpro/initializers/routes"
 )
 
 func main() {
 
-	//exampleQuery := `select * from urlpro.urls`
-	//r, e := db.Exec(exampleQuery)
-	//
-	//fmt.Println("Result is >> ", r)
+	// Load Config
+	viper.SetConfigFile(".env")
 
+	err := viper.ReadInConfig()
+	if err != nil {
+		panic(err)
+	}
+
+	value, ok := viper.Get("APP_NAME").(string)
+
+	if ok {
+		fmt.Println(value)
+	}
+
+	// DB Example
 	conn, err := d.ConnectDB()
 
 	if err != nil {
@@ -42,7 +54,10 @@ func main() {
 		fmt.Printf("originalUrl: %s\n", originalUrl)
 		fmt.Printf("shortUrlCode: %s\n", shortUrlCode)
 		fmt.Printf("baseUrl: %s\n", *baseUrl)
-		fmt.Printf("originalUrl: %s\n", *expirydate)
+
+		if expirydate != nil {
+			fmt.Printf("originalUrl: %s\n", *expirydate)
+		}
 
 	}
 
