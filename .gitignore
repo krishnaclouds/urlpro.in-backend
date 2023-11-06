@@ -148,3 +148,5 @@ fabric.properties
 
 id_local_rsa
 id_local_rsa.pub
+
+vendor
