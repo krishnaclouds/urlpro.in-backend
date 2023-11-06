@@ -1,0 +1,12 @@
+-- public.urls definition
+
+-- Drop table
+
+-- DROP TABLE public.urls;
+
+CREATE TABLE public.urls (
+	originalurl text NOT NULL,
+	shorturlcode varchar NOT NULL,
+	baseurl varchar NULL,
+	expirydate date NULL
+);
