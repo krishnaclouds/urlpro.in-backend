@@ -44,10 +44,10 @@ func main() {
 			originalUrl  string
 			shortUrlCode string
 			baseUrl      *string
-			expirydate   *string
+			expiryDate   *string
 		)
 
-		if err := rows.Scan(&originalUrl, &shortUrlCode, &baseUrl, &expirydate); err != nil {
+		if err := rows.Scan(&originalUrl, &shortUrlCode, &baseUrl, &expiryDate); err != nil {
 			panic(err)
 		}
 
@@ -55,8 +55,8 @@ func main() {
 		fmt.Printf("shortUrlCode: %s\n", shortUrlCode)
 		fmt.Printf("baseUrl: %s\n", *baseUrl)
 
-		if expirydate != nil {
-			fmt.Printf("originalUrl: %s\n", *expirydate)
+		if expiryDate != nil {
+			fmt.Printf("originalUrl: %s\n", *expiryDate)
 		}
 
 	}
