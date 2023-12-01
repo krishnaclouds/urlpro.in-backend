@@ -32,4 +32,4 @@ URLPro.in is an opensource URL short-ner application written in Golang and vue.j
 |   🎯    | Implement Backend Connectivity         | Dec 05 2023 |
 |   🎯    | Deploy the Frontend                    | Dec 10 2023 |
 |   🎯    | Check the Security Issues              | Dec 15 2023 |
-|   🎯    | Launch Website                         | Dec 20 2023 |
+|   🎯    | Launch Website                         | Dec 21 2023 |
